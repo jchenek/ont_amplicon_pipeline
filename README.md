@@ -1,6 +1,5 @@
 ONT amplicon analysis pipeline in Liu lab. (Jan. 24, 2025 updated)
 ---------------
-
 ### Step 1. Quality Control
 - Installation
 ```sh
@@ -51,7 +50,7 @@ qiime vsearch cluster-features-de-novo --i-table table.qza --i-sequences rep-seq
 ```sh
 qiime vsearch uchime-denovo --i-table table-97.qza --i-sequences rep-seqs-97.qza --output-dir uchime-denovo-out
 ```
-=======
+---------------
 
 ### Step 4. Polishing and de-redundancy
 - Using racon polish the rep-seqs for 4 times
@@ -87,7 +86,7 @@ cd-hit-est -o final-rep-seq-97otu-raw.fa -i racon_ont_r4.fa -d 0 -c 1 -n 10 -M 6
 ```sh
 perl s4.5_fa_reformat.pl final-rep-seq-97otu-raw.fa > final-rep-seq-97otu.fa
 ```
-=======
+---------------
 
 ### Step 5. Generate OTU table
 
@@ -101,7 +100,7 @@ mamba install coverm -y
 ```sh
 perl s5.coverm_contig_counts.pl 70 ../manifest_filtering final-rep-seq-97otu.fa
 ```
-=======
+---------------
 
 ### The final output of this pipeline:
 - 1. representative sequences: final-rep-seq-97otu.fa (from s4.5)
