@@ -12,7 +12,7 @@ mamba install -c bioconda nanoplot -y
 ```sh
 NanoPlot --fastq *.gz -t 70 --maxlength 40000 --plots hex dot kde -o nanoplot
 ```
-=======
+-----
 
 ### Step 2. Sequence filtering
 - Installation
