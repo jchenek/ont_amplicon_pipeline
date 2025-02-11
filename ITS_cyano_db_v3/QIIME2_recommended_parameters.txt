@@ -1,0 +1,3 @@
+qiime feature-classifier classify-consensus-vsearch --i-query rep-seqs.qza --i-reference-reads cyano_pro_syn_ITS_v3_seq.qza --i-reference-taxonomy cyano_pro_syn_ITS_v3_taxo.qza --o-classification taxonomy.qza --o-search-results taxonomy.m6out --p-perc-identity 0.6 --p-query-cov 0.3 --p-maxaccepts all --p-maxrejects all --p-maxhits 3 --p-threads 20
+
+qiime feature-classifier classify-consensus-vsearch --i-query rep-seqs.qza --i-reference-reads ../cyano_pro_syn_ITS_v3_seq.qza --i-reference-taxonomy ../cyano_pro_syn_ITS_v3_taxo.qza --o-classification taxonomy.qza --o-search-results taxonomy.m6out --p-perc-identity 0.5 --p-query-cov 0.2 --p-maxaccepts all --p-maxrejects all --p-maxhits 3 --p-threads 20
