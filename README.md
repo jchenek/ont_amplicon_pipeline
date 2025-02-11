@@ -1,8 +1,8 @@
 ONT amplicon analysis pipeline in Liu lab. (Jan. 24, 2025 updated)
+---------------
 =======
 
 ### Step 1. Quality Control
----------------
 - Installation
 ```sh
 conda create -n nanoplot -y
@@ -13,10 +13,9 @@ mamba install -c bioconda nanoplot -y
 ```sh
 NanoPlot --fastq *.gz -t 70 --maxlength 40000 --plots hex dot kde -o nanoplot
 ```
-
+---------------
 
 ### Step 2. Sequence filtering
----------------
 - Installation
 ```sh
 conda create -n chopper -y
@@ -28,7 +27,7 @@ mamba install -c bioconda chopper -y
 #chopper -l 1000 -q 10 --threads 70 -i <IN .gz> | gzip > <OU .gz>
 perl s2_chopper_filtering.pl manifest 1000 10 70
 ```
-=======
+---------------
 
 ### Step 3. Generate draft rep-seqs
 - Install QIIME2 in advance (v2024.2.0 is tested, https://docs.qiime2.org/2024.2/)
