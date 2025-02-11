@@ -1,4 +1,4 @@
-ONT amplicon analysis pipeline in Liu lab. (Jan. 24, 2025 updated)
+ONT amplicon analysis pipeline (updated on Jan. 24, 2025)
 ---------------
 ### Step 1. Quality Control
 - Installation
